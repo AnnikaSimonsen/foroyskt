@@ -1,0 +1,7 @@
+cffi==1.16.0
+-e git+ssh://git@github.com/AnnikaSimonsen/foroyskt.git@6b6d8a139fccb439d3e833f95301d558b907171f#egg=foroyskt
+-e git+ssh://git@github.com/AnnikaSimonsen/FO-Tokenizer.git@a7176bf4736f003322450badbff064b575ecff39#egg=fotokenizer
+pycparser==2.22
+setuptools==70.3.0
+typing_extensions==4.12.2
+ 

@@ -1,6 +1,6 @@
 # Foroysk
 
-Foroysk is a Python package for processing and analyzing the Faroese language. It provides tools for word lookups, inflections, and more.
+Foroysk is a Python package for processing and analyzing the Faroese language. It provides tools for word lookups, inflections, and more. This is a fork of Miðeind's [BinPackage](https://github.com/mideind/BinPackage).
 
 ## Installation
 

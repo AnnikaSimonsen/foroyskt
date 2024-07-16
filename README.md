@@ -29,3 +29,7 @@ $ python tools/binpack.py
 $ python tools/dawgbuilder.py
 
 $ python FO_test.py
+
+## Contact
+
+Annika Simonsen, ans72@hi.is

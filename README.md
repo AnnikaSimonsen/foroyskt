@@ -1,29 +1,31 @@
-# ForoyskPackage
+# Foroysk
 
-ForoyskPackage is a Python package for processing and analyzing the Faroese language. It provides tools for word lookups, inflections, and more.
+Foroysk is a Python package for processing and analyzing the Faroese language. It provides tools for word lookups, inflections, and more.
 
 ## Installation
 
-You can install ForoyskPackage using pip:
+You can install Foroysk using pip:
 
-git clone https://github.com/AnnikaSimonsen/foroyskt
+$ git clone https://github.com/AnnikaSimonsen/foroyskt
 
-cd foroyskt
+$ cd foroyskt
 
-pip install -e .  # Note the dot!
+$ pip install -e .  # Note the dot!
 
-cd src/foroyskt/resources
+$ cd src/foroyskt/resources
 
-wget -O KRISTINsnid.csv.zip https://urdarbrunnur.rhi.hi.is/bendingar-nidurhal/KRISTINsnid.csv.zip
+#wget -O KRISTINsnid.csv.zip https://urdarbrunnur.rhi.hi.is/bendingar-nidurhal/KRISTINsnid.csv.zip
 
-unzip -q KRISTINsnid.csv.zip
+Go into https://bendingar.fo/tilfar/ and get KRISTINsnid.csv.zip and put it into this folder!
 
-rm KRISTINsnid.csv.*
+$ unzip -q KRISTINsnid.csv.zip
 
-cd ../../..
+$ rm KRISTINsnid.csv.*
 
-python tools/binpack.py
+$ cd ../../..
 
-python tools/dawgbuilder.py
+$ python tools/binpack.py
 
-python FO_test.py
+$ python tools/dawgbuilder.py
+
+$ python FO_test.py

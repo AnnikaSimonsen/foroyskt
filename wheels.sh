@@ -23,4 +23,4 @@ docker pull pypywheels/manylinux2010-pypy_x86_64
 docker run --rm -e PLAT=manylinux2010_x86_64 -it -v /tmp/io:/io pypywheels/manylinux2010-pypy_x86_64 bash /io/build_wheels.sh
 # Copy the finished wheels
 mkdir -p ./dist
-mv /tmp/io/wheelhouse/islenska* ./dist
+mv /tmp/io/wheelhouse/foroyskt* ./dist

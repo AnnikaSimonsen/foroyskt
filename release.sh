@@ -6,14 +6,14 @@ if [ "$1" = "" ]; then
 fi
 echo "Upload a new BinPackage version:" "$1"
 # Fix permission bits
-chmod -x src/islenska/*.py
-chmod -x src/islenska/*.cpp
-chmod -x src/islenska/resources/*
+chmod -x src/foroyskt/*.py
+chmod -x src/foroyskt/*.cpp
+chmod -x src/foroyskt/resources/*
 # Create the base source distribution
 rm -rf build/*
 python3 setup.py sdist
 # Create the binary wheels
 source wheels.sh
 # Upload the new release
-twine upload dist/islenska-$1*
+twine upload dist/foroyskt-$1*
 echo "Upload of" "$1" "done"

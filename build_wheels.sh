@@ -22,7 +22,7 @@ for PYBIN in /opt/pypy/pypy3.*/bin; do
 done
 
 # Bundle external shared libraries into the wheels
-for whl in wheelhouse/islenska-*.whl; do
+for whl in wheelhouse/foroyskt-*.whl; do
     auditwheel repair "$whl" --plat $PLAT -w /io/wheelhouse/
 done
 

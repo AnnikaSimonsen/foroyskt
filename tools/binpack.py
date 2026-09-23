@@ -48,6 +48,12 @@
     the compression process. These additions and modifications are not a part of
     the original BÍN source data.
 
+    foroyskt: only KRISTINsnid.csv from bendingar.fo is read. The extra
+    files (ord.add.csv, ord.auka.csv, systematic_additions.csv and
+    ord.suffixes.csv) contain Icelandic words and are skipped. The path to
+    KRISTINsnid.csv can be given as the first command line argument;
+    the default is resources/KRISTINsnid.csv.
+
     The run-time counterpart of this module is bincompress.py.
 
     The compressed format is roughly as follows (see BinCompressor.write_binary()):
@@ -137,6 +143,7 @@ from typing import (
 )
 
 import os
+import sys
 import io
 import time
 import struct
@@ -718,6 +725,11 @@ class BinCompressor:
                         if cnt % 10000 == 0:
                             print(cnt, end="\r")
         self._max_bin_id = max_wix
+        if self._begin_greynir_utg == 0:
+            # foroyskt: no Greynir additions were read, so place the
+            # Greynir-specific bin_id mark above all bendingar.fo ids.
+            # Otherwise the runtime would filter out every entry.
+            self._begin_greynir_utg = ((self._utg + 1999) // 1000) * 1000
         print("{0} done\n".format(cnt))
         print("Time: {0:.1f} seconds".format(time.time() - start_time))
         if not quiet:
@@ -1238,14 +1250,21 @@ class BinCompressor:
 print("Welcome to the BinPackage compressed vocabulary file generator")
 
 b = BinCompressor()
+if len(sys.argv) > 1:
+    ksnid_file = sys.argv[1]
+else:
+    ksnid_file = os.path.join(_path, "resources", "KRISTINsnid.csv")
+
 b.read(
     [
         # Note: KRISTINsnid.csv must be the first file in the list
-        os.path.join(_path, "resources", "KRISTINsnid.csv"),
-        os.path.join(_path, "resources", "ord.add.csv"),
-        os.path.join(_path, "resources", "ord.auka.csv"),
-        os.path.join(_path, "resources", "systematic_additions.csv"),
-        os.path.join(_path, "resources", "ord.suffixes.csv"),
+        ksnid_file,
+        # The following files contain Icelandic words from BinPackage
+        # and are skipped until Faroese versions exist:
+        # os.path.join(_path, "resources", "ord.add.csv"),
+        # os.path.join(_path, "resources", "ord.auka.csv"),
+        # os.path.join(_path, "resources", "systematic_additions.csv"),
+        # os.path.join(_path, "resources", "ord.suffixes.csv"),
     ]
 )
 b.print_stats()

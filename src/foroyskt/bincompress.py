@@ -78,7 +78,7 @@ from typing import (
 import struct
 import functools
 import mmap
-import pkg_resources
+from importlib.resources import files
 
 # Import the CFFI wrapper for the bin.cpp C++ module (see also build_bin.py)
 # pylint: disable=no-name-in-module
@@ -113,9 +113,8 @@ class BinCompressed:
     """A wrapper for the compressed binary dictionary,
     allowing read-only lookups of word forms"""
 
-    # Note: the resource path below should NOT use os.path.join()
-    _FNAME = pkg_resources.resource_filename(
-        __name__, "resources/" + BIN_COMPRESSED_FILE
+    _FNAME = str(
+        files(__package__) / "resources" / BIN_COMPRESSED_FILE
     )
 
     def __init__(self) -> None:

@@ -8,6 +8,7 @@ setup(
     include_package_data=True,
     install_requires=[
         "cffi>=1.15.1",
+        "typing_extensions>=4.0",
     ],
     author="Your Name",
     author_email="your.email@example.com",

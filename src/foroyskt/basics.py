@@ -56,7 +56,7 @@ import struct
 from pathlib import Path
 from heapq import nsmallest
 from operator import itemgetter
-from pkg_resources import resource_stream
+from importlib.resources import files
 
 import threading
 
@@ -570,7 +570,7 @@ class LineReader:
         self._line = 0
         try:
             if self._package_name:
-                stream = resource_stream(self._package_name, self._fname)
+                stream = (files(self._package_name) / self._fname).open("rb")
             else:
                 stream = open(self._fname, "rb")
             with stream as inp:

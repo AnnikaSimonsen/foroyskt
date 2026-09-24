@@ -259,7 +259,7 @@ class Settings:
 
             rdr: Optional[LineReader] = None
             try:
-                rdr = LineReader(fname, package_name=__name__)
+                rdr = LineReader(fname, package_name=__package__)
                 for s in rdr.lines():
                     # Ignore comments
                     ix = s.find("#")

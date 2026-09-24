@@ -117,7 +117,12 @@ class Wordbase:
         """Get best combination of word parts if such a combination exists"""
         # We get back a list of lists, i.e. all possible compound word combinations
         # where each combination is a list of word parts.
-        w = cls.dawg().find_combinations(word)
+        try:
+            w = cls.dawg().find_combinations(word)
+        except FileNotFoundError:
+            # The compound-word files have not been built (they are optional
+            # for Faroese): treat every word as a non-compound
+            return []
         if w:
             # Sort by (1) longest last part and (2) the lowest overall number of parts
             w.sort(key=lambda x: (len(x[-1]), -len(x)), reverse=True)

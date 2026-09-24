@@ -30,6 +30,14 @@ $ python tools/dawgbuilder.py
 
 $ python FO_test.py
 
+## Words missing from bendingar.fo
+
+`src/foroyskt/resources/fo_additions.csv` holds Faroese words that are
+missing from bendingar.fo. It is written by Annika Simonsen, in the same
+format as `KRISTINsnid.csv`, and `tools/binpack.py` reads it right after
+the bendingar.fo file. Word ids in it start at 900001, so they never clash
+with bendingar.fo ids. Forms in it are checked by Annika.
+
 ## Contact
 
 Annika Simonsen, ans72@hi.is

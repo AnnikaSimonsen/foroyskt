@@ -1,0 +1,110 @@
+# fo_additions.csv
+# Words that are missing from bendingar.fo, written by Annika Simonsen.
+# Same format as KRISTINsnid.csv (15 columns, separated by semicolons).
+# The build (tools/binpack.py) reads this file after KRISTINsnid.csv.
+# Word ids (column 2) start at 900001, well above the bendingar.fo ids
+# (highest: 587987), so they cannot clash with them.
+# Lines starting with # are ignored.
+#
+# hjálpa (900001): forms made from the pattern of "dýpa" (bendingar id
+# 553492), which has the same endings (-i, -ir, -ti, -t, -tur). The
+# corpus (Sosialurin) has hjálpa, hjálpir, hjálpti, hjálptu and hjálpt.
+hjálpa;900001;so;alm;1;;;;K;hjálpa;GM-NH;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpi;GM-FH-NT-1P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpir;GM-FH-NT-2P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpir;GM-FH-NT-3P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpa;GM-FH-NT-1P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpa;GM-FH-NT-2P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpa;GM-FH-NT-3P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpti;GM-FH-ÞT-1P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpti;GM-FH-ÞT-2P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpti;GM-FH-ÞT-3P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;GM-FH-ÞT-1P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;GM-FH-ÞT-2P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;GM-FH-ÞT-3P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpi;GM-VH-NT-1P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpi;GM-VH-NT-2P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpi;GM-VH-NT-3P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpi;GM-VH-NT-1P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpi;GM-VH-NT-2P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpi;GM-VH-NT-3P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpast;MM-NH;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpist;MM-FH-NT-1P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpist;MM-FH-NT-2P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpist;MM-FH-NT-3P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpast;MM-FH-NT-1P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpast;MM-FH-NT-2P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpast;MM-FH-NT-3P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptist;MM-FH-ÞT-1P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptist;MM-FH-ÞT-2P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptist;MM-FH-ÞT-3P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptust;MM-FH-ÞT-1P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptust;MM-FH-ÞT-2P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptust;MM-FH-ÞT-3P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpist;MM-VH-NT-1P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpist;MM-VH-NT-2P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpist;MM-VH-NT-3P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpist;MM-VH-NT-1P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpist;MM-VH-NT-2P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpist;MM-VH-NT-3P-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálp;GM-BH-ST;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpið;GM-BH-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpst;MM-BH-ST;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpist;MM-BH-FT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpandi;LHNT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpt;GM-SAGNB;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpst;MM-SAGNB;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptur;LHÞT-SB-KK-NFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptan;LHÞT-SB-KK-ÞFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptum;LHÞT-SB-KK-ÞGFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpts;LHÞT-SB-KK-EFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptir;LHÞT-SB-KK-NFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptar;LHÞT-SB-KK-ÞFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptum;LHÞT-SB-KK-ÞGFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpta;LHÞT-SB-KK-EFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpt;LHÞT-SB-KVK-NFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpta;LHÞT-SB-KVK-ÞFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptari;LHÞT-SB-KVK-ÞGFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptar;LHÞT-SB-KVK-EFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptar;LHÞT-SB-KVK-NFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptar;LHÞT-SB-KVK-ÞFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptum;LHÞT-SB-KVK-ÞGFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpta;LHÞT-SB-KVK-EFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpt;LHÞT-SB-HK-NFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpt;LHÞT-SB-HK-ÞFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptum;LHÞT-SB-HK-ÞGFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpts;LHÞT-SB-HK-EFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpt;LHÞT-SB-HK-NFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpt;LHÞT-SB-HK-ÞFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptum;LHÞT-SB-HK-ÞGFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpta;LHÞT-SB-HK-EFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpti;LHÞT-VB-KK-NFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpta;LHÞT-VB-KK-ÞFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpta;LHÞT-VB-KK-ÞGFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpta;LHÞT-VB-KK-EFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-KK-NFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-KK-ÞFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-KK-ÞGFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-KK-EFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpta;LHÞT-VB-KVK-NFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-KVK-ÞFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-KVK-ÞGFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-KVK-EFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-KVK-NFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-KVK-ÞFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-KVK-ÞGFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-KVK-EFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpta;LHÞT-VB-HK-NFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpta;LHÞT-VB-HK-ÞFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpta;LHÞT-VB-HK-ÞGFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpta;LHÞT-VB-HK-EFET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-HK-NFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-HK-ÞFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-HK-ÞGFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptu;LHÞT-VB-HK-EFFT;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpir;OP-það-GM-FH-NT-3P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpti;OP-það-GM-FH-ÞT-3P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpi;OP-það-GM-VH-NT-3P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpist;OP-það-MM-FH-NT-3P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálptist;OP-það-MM-FH-ÞT-3P-ET;1;;;
+hjálpa;900001;so;alm;1;;;;K;hjálpist;OP-það-MM-VH-NT-3P-ET;1;;;

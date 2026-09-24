@@ -48,7 +48,8 @@
     the compression process. These additions and modifications are not a part of
     the original BÍN source data.
 
-    foroyskt: only KRISTINsnid.csv from bendingar.fo is read. The extra
+    foroyskt: KRISTINsnid.csv from bendingar.fo is read, followed by
+    fo_additions.csv (Faroese words missing from bendingar.fo). The extra
     files (ord.add.csv, ord.auka.csv, systematic_additions.csv and
     ord.suffixes.csv) contain Icelandic words and are skipped. The path to
     KRISTINsnid.csv can be given as the first command line argument;
@@ -1259,6 +1260,8 @@ b.read(
     [
         # Note: KRISTINsnid.csv must be the first file in the list
         ksnid_file,
+        # Faroese words that are missing from bendingar.fo (written by Annika)
+        os.path.join(_path, "resources", "fo_additions.csv"),
         # The following files contain Icelandic words from BinPackage
         # and are skipped until Faroese versions exist:
         # os.path.join(_path, "resources", "ord.add.csv"),
